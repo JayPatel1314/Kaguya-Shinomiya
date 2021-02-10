@@ -53,20 +53,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there *{}*! My name is Tanjiro (鬼滅の刃(Kimetsu No Yaiba, Demon Slayer)!
-I Slay Bad Demons Wandering At night and help admins manage their groups with My Commands! Have a look at the following for an idea of some of \
+Hey there *{}*! My name is Kaguya (鬼滅の刃(Kimetsu No Yaiba, Demon Slayer)!
+I am the group management bot prepared with love by @Kingkharerashab_1176Official! Have a look at the following for an idea of some of \
 the things I can help you with. Type /help to see my Functions.
 """
 
 HELP_STRINGS = """
 Hey there! My Name is *{}*!
 I am an Anime themed group management bot.
-To add me to your group click ["HERE"](t.me/TanjiroKamadoRobot?startgroup=botstart)
+I am a Group Restricted Bot so u can't add me anywhere.
 You can find my list of available commands with /help.
-[Tanjiro's Repo](github.com/JayPatel1314/Tanjiro-Kamado) 
+[Kaguya's Repo](github.com/JayPatel1314/Kaguya-Shinomiya) 
 See [Basic Configuration Checklist](t.me/OnePunchUpdates/29) on how to secure your group.
-If any Questions Regarding Tanjiro Then Join [Tanjiro Support](https://t.me/TanjiroKamadoSupport).
-This bot is Forked From [Saitama Robot](https://t.me/SaitamaRobot).
+If any Questions Regarding Kaguya Then Join [AAT Discuzz](https://t.me/aatdiscuzzzz).
+This bot is Forked From [Tanjiro Kamado](https://t.me/TanjiroKamado_bot) and [Saitama Robot](https://t.me/saitamarobot).
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -83,10 +83,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/27af4c96f012a3bb176a7.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d4fc4cc44be9e110a3b61.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Kaguya is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
@@ -206,17 +206,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🙃Add Tanjiro Kamado to your group!🙃",
+                            text="🙃U can't Kaguya anywhere!🙃",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="👀Support Group",
-                             url=f"https://t.me/TanjiroSupportChat"),
+                             text="👀AAT Discuzz",
+                             url=f"https://t.me/AatDiscuzzzz"),
                          InlineKeyboardButton(
-                             text="📃Updates Channel📃",
-                             url="https://t.me/TanjiroBoTUpdates")
+                             text="📃Updates Channel For AAT",
+                             url="https://t.me/AnimeAcademyTeam_news")
                      ],
                      [
                          InlineKeyboardButton(
@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="📸 Source Code.",
-                             url="https://github.com/JayPatel1314/Tanjiro-Kamado")
+                             url="https://github.com/")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -581,7 +581,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Using long polling. Kaguya Started Sucessfully")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
