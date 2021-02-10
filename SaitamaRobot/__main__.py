@@ -53,8 +53,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there *{}*! My name is Kaguya Shinomiya かぐや様は告らせたい ～天才たちの恋愛頭脳戦(Kaguya-sama: Love is War)!
-I am the group management bot prepared with love by @Kingkharerashab_1176Official! Have a look at the following for an idea of some of \
+Hey there *{}*! My name is Kaguya (Kaguya-sama: Love is War)!
+I am a group Management Bot and help admins manage their groups with My Commands! Have a look at the following for an idea of some of \
 the things I can help you with. Type /help to see my Functions.
 """
 
@@ -206,16 +206,16 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🙃U can't Kaguya anywhere!🙃",
+                            text="🙃Kaguya is Group Restricted!🙃",
                             url="t.me/{}?startgroup=true".format(
-                                context.bot.username)),
+                                context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="👀AAT Discuzz",
-                             url=f"https://t.me/AatDiscuzzzz"),
+                             text="👀Discuzzzz Group",
+                             url=f"https://t.me/AATDiscuzzzz"),
                          InlineKeyboardButton(
-                             text="📃Updates Channel For AAT",
+                             text="📃Updates Channel📃",
                              url="https://t.me/AnimeAcademyTeam_news")
                      ],
                      [
@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="📸 Source Code.",
-                             url="https://github.com/")
+                             url="https://github.com/JayPatel1314/Tanjiro-Kamado")
                      ]]))
     else:
         update.effective_message.reply_text(
