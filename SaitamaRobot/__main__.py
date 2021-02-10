@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there *{}*! My name is Kaguya (鬼滅の刃(Kimetsu No Yaiba, Demon Slayer)!
+Hey there *{}*! My name is Kaguya Shinomiya かぐや様は告らせたい ～天才たちの恋愛頭脳戦(Kaguya-sama: Love is War)!
 I am the group management bot prepared with love by @Kingkharerashab_1176Official! Have a look at the following for an idea of some of \
 the things I can help you with. Type /help to see my Functions.
 """
