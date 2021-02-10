@@ -206,8 +206,9 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🙃AAT help Center!🙃",
-                            url="t.me/AnimeAcademyTeam"),
+                            text="🙃U can't Kaguya anywhere!🙃",
+                            url="t.me/{}?startgroup=true".format(
+                                context.bot.username)),
                     ],
                      [
                          InlineKeyboardButton(
