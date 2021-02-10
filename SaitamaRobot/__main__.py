@@ -220,8 +220,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💬Getting Started Guide💬",
-                             url="https://t.me/TanjiroBoTUpdates/6")
+                             text="💬AAT Help Center💬",
+                             url="https://t.me/AnimeAcademyTeam")
                      ],
                      [
                          InlineKeyboardButton(
